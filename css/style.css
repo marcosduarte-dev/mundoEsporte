@@ -1,0 +1,18 @@
+* {
+  background-color: #042138;
+  color: white;
+}
+body {
+  background-color: #042138!important;
+}
+header span {
+  color: #00C990;
+  font-family: 'Poppins', sans-serif;
+}
+ul li a {
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+}
+.nav-link {
+  color: white!important;
+}
