@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mundo Esporte</title>
+    <link rel="stylesheet" href="css/styleArtigos.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header
+        class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+      >
+        <a
+          href="/"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
+        >
+          <span class="fs-4">MUNDO ESPORTE</span>
+        </a>
+
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="index.html#sobre" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="index.html#blog" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="artigos.html" class="nav-link">Artigos</a></li>
+          <li class="nav-item">
+            <a href="#emailNewslatter" class="nav-link active" aria-current="page"
+              >Newslatter</a
+            >
+          </li>
+        </ul>
+      </header>
+    </div>
+
+    <section class="cointainer cabecalho"> 
+        <div style="display: inline-block; position: relative;">
+          <img id="img-conteudo" src="img/artigos.jpg" alt="..." />
+          <h1 id="titulo-cabecalho">Artigos Esportivos</h1>
+        </div>
+      </section>
+
+    <section class="conteudo">
+      <div class="container">
+        <div class="titulo text-center">
+          <h1>Artigos</h1>
+          <span class="regua"></span>
+        </div>
+        <div id="card-group" class="card-group">
+          <div class="card" onclick="encaminha('Arsenal')">
+            <img
+              src="img/arsenal.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Candidatos ao Titulo?</h5>
+              <p class="card-text">
+                Arsenal continua bom momento, vencendo Chelsea, seu rival local
+                e retorna a liderança do campeonato inglês por mais uma rodada.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Atualizado 3 minutos atrás</small>
+            </div>
+          </div>
+          <div class="card" onclick="encaminha('Copa')">
+            <img
+              src="img/Selecao.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Seleção Brasileira na Copa</h5>
+              <p class="card-text">
+                Brasil chega para mais uma copa na tentativa da conquista do
+                Hexa, uma seleção com nomes mais jovens, mas com mais
+                maturidade.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Atualizado 3 minutos atrás</small>
+            </div>
+          </div>
+          <div class="card" onclick="encaminha('Golden')">
+            <img
+              src="img/golden state warriors.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                O que está acontecendo com os campeões?
+              </h5>
+              <p class="card-text">
+                Golden State Warriors perde mais uma e inicia temporada de forma
+                desastrosa, e o craque da equipe desabafa.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Atualizado 3 minutos atrás</small>
+            </div>
+          </div>
+        </div>
+        <div id="card-group" class="card-group">
+            <div class="card" onclick="encaminha('treinoFutebol')">
+              <img
+                src="img/Futebol treino.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Treino de Futebol</h5>
+                <p class="card-text">
+                    No Brasil, futebol se aprende na prática, desde pequeno. Apesar 
+                    de existirem escolinhas e cursos, normalmente é primeiro praticando 
+                    na rua, no play, no clube ou na hora do recreio que as crianças 
+                    têm contato com o jogo...
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Atualizado 3 minutos atrás</small>
+              </div>
+            </div>
+            <div class="card" onclick="encaminha('treinoBasquete')">
+              <img
+                src="img/Basquete treino.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Treino de Basquete</h5>
+                <p class="card-text">
+                    O sucesso nas quadras não cai do céu. Pra detonar na partida, é preciso muito treino de basquete,
+                    dominando os mais diversos movimentos. Como em qualquer área da vida, treinar 
+                    duro ajuda você a ir longe. E, treinando do jeito certo, você é capaz de acelerar 
+                    seus resultados e atingir os seus objetivos muito mais rápido.
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Atualizado 3 minutos atrás</small>
+              </div>
+            </div>
+            <div class="card" onclick="encaminha('treinoFutsal')">
+              <img
+                src="img/futsal.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Treino de Futsal
+                </h5>
+                <p class="card-text">
+                    Geralmente, essas técnicas de treinamento determinam como será
+                    o processo do jogo. No caso do futsal, repetitivo e sistemático composto
+                    de exercícios progressivos que visam o aperfeiçoamento do desempenho.
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Atualizado 3 minutos atrás</small>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    
+
+    <footer>
+        <div class="container text-center">
+          <h2 style="color: #00C990;">Entre de Graça no nosso</h2>
+          <h2>Email Newsletter</h2>
+          <span>Registre e não perca nenhuma das nossas postagens!</span>
+          
+          <div class="cadastrar">
+            <input type="email" class="form-control" id="emailNewslatter" placeholder="Digite seu endereço de email">
+          </div>
+        </div>
+      </footer>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

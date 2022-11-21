@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-be">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins:wght@900&display=swap"
       rel="stylesheet"
     />
+    <script src="js/script.js"></script>
   </head>
   <body>
     <div class="container">
@@ -25,8 +26,10 @@
         </a>
 
         <ul class="nav nav-pills">
-          <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="#sobre" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="artigos.html" class="nav-link">Artigos</a></li>
+
           <li class="nav-item">
             <a href="#emailNewslatter" class="nav-link active" aria-current="page"
               >Newslatter</a
@@ -39,7 +42,7 @@
     <section class="container cabecalho">
       <div class="row">
         <div class="col-8 mx-auto">
-          <h1>Nossos</h1>
+          <h1 id="sobre">Nossos</h1>
           <h2>Especialistas</h2>
         </div>
       </div>
@@ -67,7 +70,7 @@
             <div class="card-body">
               <div class="row">
                 <div class="col-4" style="background-color: white">
-                  <img src="img/marcos.png" alt="" />
+                  <img src="img/wesley.jpg" alt="" />
                 </div>
                 <div class="col-8" style="background-color: white">
                   <p class="card-text">
@@ -86,11 +89,11 @@
     <section class="conteudo">
       <div class="container">
         <div class="titulo text-center">
-          <h1>Conheça Nosso Blog</h1>
+          <h1 id="blog">Conheça Nosso Blog</h1>
           <span class="regua"></span>
         </div>
         <div class="card-group">
-          <div class="card">
+          <div class="card" onclick="encaminha('Arsenal')">
             <img
               src="img/arsenal.jpg"
               class="card-img-top"
@@ -107,7 +110,7 @@
               <small class="text-muted">Atualizado 3 minutos atrás</small>
             </div>
           </div>
-          <div class="card">
+          <div class="card" onclick="encaminha('Copa')">
             <img
               src="img/Selecao.jpg"
               class="card-img-top"
@@ -125,7 +128,7 @@
               <small class="text-muted">Atualizado 3 minutos atrás</small>
             </div>
           </div>
-          <div class="card">
+          <div class="card" onclick="encaminha('Golden')">
             <img
               src="img/golden state warriors.jpg"
               class="card-img-top"
@@ -155,7 +158,7 @@
           <span class="regua"></span>
         </div>
         <div class="card-group">
-          <div class="card">
+          <div class="card" onclick="encaminha('Futebol')">
             <img
               src="img/soccer.jpg"
               class="card-img-top"
@@ -171,7 +174,7 @@
               <small class="text-muted">Atualizado 3 minutos atrás</small>
             </div>
           </div>
-          <div class="card">
+          <div class="card" onclick="encaminha('Basquete')">
             <img
               src="img/basketball.jpg"
               class="card-img-top"
@@ -187,7 +190,7 @@
               <small class="text-muted">Atualizado 3 minutos atrás</small>
             </div>
           </div>
-          <div class="card">
+          <div class="card" onclick="encaminha('Futsal')">
             <img
               src="img/futsal.jpg"
               class="card-img-top"
@@ -213,8 +216,11 @@
         <h2>Email Newsletter</h2>
         <span>Registre e não perca nenhuma das nossas postagens!</span>
         
-        <div class="cadastrar">
-          <input type="email" class="form-control" id="emailNewslatter" placeholder="Digite seu endereço de email">
+        <div class="cadastrar text-center">
+            <input type="email" class="form-control" id="emailNewslatter" placeholder="Digite seu endereço de email" style="display: inline;">
+            <button type="submit" class="mt-2">Enviar</button>
+            <!--<a href="#emailNewslatter" class="nav-link active" aria-current="page"
+            >Enviar</a>-->
         </div>
       </div>
     </footer>
